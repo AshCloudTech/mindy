@@ -933,7 +933,7 @@ form label.error { display: none !important; }
 /* ========================================================================== 7.0 Forms Style ========================================================================== */
 .form-quote, .form-message { margin-top: 30px; }
 .form-quote:first-child, .form-message:first-child { margin-top: 0; }
-.form-quote .form-control, .form-message .form-control { height: 50px; -ms-border-radius: 2px; border-radius: 2px; border: 1px solid #e1e1e1; background-color: #f4f8f8; }
+.form-quote .form-control, .form-message .form-control { height: 50px; -ms-border-radius: 2px; border-radius: 2px; border: 1px solid #e1e1e1; }
 .has-bg .form-quote .form-control, .has-bg .form-message .form-control { border-color: #f4f8f8; }
 .form-quote .form-control.txtarea, .form-message .form-control.txtarea { height: 150px; }
 .form-quote .form-group, .form-message .form-group { margin-bottom: 15px; }

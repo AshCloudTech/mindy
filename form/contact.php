@@ -20,8 +20,8 @@ $mail = new PHPMailer(true);
 // =====================
 // SITE SETTINGS
 // =====================
-$sitename = 'Your Site Name';
-$adminEmail = '';
+$sitename = 'minty';
+$adminEmail = 'syedaummehani.m@gmail.com';
 
 // =====================
 // SMTP CONFIG (GMAIL)
@@ -29,8 +29,8 @@ $adminEmail = '';
 $mail->isSMTP();
 $mail->Host       = 'smtp.gmail.com';
 $mail->SMTPAuth   = true;
-$mail->Username   = '';
-$mail->Password   = ''; //
+$mail->Username   = 'syedaummehani.m@gmail.com';
+$mail->Password   = 'kzmy miqw hhay yuwd'; //
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port       = 587;
 

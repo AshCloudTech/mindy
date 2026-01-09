@@ -3547,7 +3547,7 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
 }
 
 .accreditation-item img {
-    max-height: 70px;
+    max-height: 100px;
     width: auto;
     margin-bottom: 10px;
 }

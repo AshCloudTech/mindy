@@ -86,6 +86,53 @@
     background: #fdfdfd;
     padding: 60px 30px;   
 }
+.accreditations-section {
+    padding: 50px 0;
+    border-top: 1px solid #eee;
+}
+
+.accreditations-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.accreditations-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.accreditation-item {
+    text-align: center;
+}
+
+.accreditation-item img {
+    max-height: 70px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.accreditation-item p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #555;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .accreditations-logos {
+        gap: 30px;
+    }
+
+    .accreditation-item img {
+        max-height: 60px;
+    }
+}
 
 
 	</style>

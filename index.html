@@ -10,6 +10,79 @@
 	<link rel="icon" href="image/logo_bg.png" type="image/png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
 	<link id="style-css" rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<style>
+		.faq-section {
+    padding: 60px 20px;
+    background: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+.faq-accordion {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 18px 22px;
+    background: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: #020617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding: 0 22px;
+}
+
+.faq-answer p {
+    padding: 15px 0 20px;
+    margin: 0;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+	</style>
 </head>
 
 <body class="site-body style-v1">
@@ -34,7 +107,7 @@
 									class="fa fa-phone" aria-hidden="true"></em> 07588866241 </span>
 						</li>
 						<li class="t-phone t-phone1 t-phone-s2">
-							<span><small>Email </small> <em class="fa fa-phone" aria-hidden="true"></em> 
+							<span><small>Email </small> <em class="fa fa-envelope" aria-hidden="true"></em> 
 									mintyheating@yahoo.com</span>
 						</li>
 						<li class="quote-btn"><a href="contact.html" class="btn">Schedule Service Now</a></li>
@@ -65,11 +138,11 @@
 						<li>
 							<a href="services.html">Services</a>
 							<ul>
-								<li><a href="boiler-installation-service.html">Boiler Installation</a></li>
-								<li><a href="boiler-repair.html">Boiler Repair</a></li>
-								<li><a href="heating-services.html">Heating Services</a></li>
-								<li><a href="general-plumbing-services.html">General Plumbing Services</a></li>
-								<li><a href="landlord-gas-safety-checks.html">Landlord Gas Safety Checks</a></li>
+								
+								<li><a href="services_and_repair.html">Service & Repair</a></li>
+								
+								<li><a href="general-plumbing-services.html"> Plumbing Services</a></li>
+								<li><a href="gas_boiler.html">Gas Boiler Service</a></li>
 							</ul>
 						</li>
 						
@@ -145,50 +218,8 @@
 	<!-- Service Section -->
 	<div class="section section-services section-pad">
 		<div class="container">
-			<div class="content row">
-				<!-- Feature Row  -->
-				<div class="row row-feature row-column">
-					<div class="col-md-6 col-sm-6">
-						<!-- feature box -->
-						<div class="feature feature-s6 boxed">
-							<a href="#">
-								<div class="fbox-photo">
-									<img src="image/Home Page Card Image 4.png" alt="">
-								</div>
-								<div class="fbox-content">
-									<h3>Landlord Gas Safety Checks </h3>
-									<p>Certified landlord gas safety checks with full gas safety inspection and gas safe
-										register check. Fast bookings and trusted gas safety checks near you.</p>
-									<span class="btn-link link-arrow"><a href="landlord-gas-safety-checks.html">Read More</a></span>
-								</div>
-							</a>
-						</div>
-						<!-- End Feature box -->
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<!-- feature box -->
-						<div class="feature feature-s6 boxed">
-							<a href="#">
-								<div class="fbox-photo">
-									<img src="image/Home Page Card Image 5.png" alt="">
-								</div>
-								<div class="fbox-content">
-									<h3>Plumbing Services </h3>
-									<p>Reliable plumbing services by local plumbers near you. From emergency plumber
-										callouts to general plumbing repairs, we handle all plumbing emergencies fast.
-									</p>
-									<span class="btn-link link-arrow"><a href="general-plumbing-services.html">Read More</a></span>
-								</div>
-							</a>
-						</div>
-						<!-- End Feature box -->
-					</div>
-
-				</div>
-				<!-- Feture Row  #end -->
-			</div>
-		</div>
-		<div class="container section-pad">
+			<h1>Welcome to Minty Heating</h1>
+			<p>Minty Heating delivers trusted, cost-effective plumbing, gas boiler, and service & repair solutions you can rely on. Based in Feltham, we cover Staines, Ashford, Stanwell, Twickenham, Kingston, Slough, and nearby areas providing everything from everyday plumbing repairs to new gas boiler installations and urgent breakdown support.</p>
 			<div class="content row">
 				<!-- Feature Row  -->
 				<div class="row row-feature row-column">
@@ -197,12 +228,28 @@
 						<div class="feature feature-s6 boxed">
 							<a href="#">
 								<div class="fbox-photo">
+									<img src="image/Home Page Card Image 5.png" alt="">
+								</div>
+								<div class="fbox-content">
+									<h3>Plumbing Services </h3>
+									<p>Professional plumbing services delivered by experienced local plumbers near you. From everyday repairs to urgent plumbing emergencies, we provide fast response, expert workmanship, and transparent pricing for homes and businesses.
+									</p>
+									<span class="btn-link link-arrow"><a href="general-plumbing-services.html">Read More</a></span>
+								</div>
+							</a>
+						</div>
+						<!-- End Feature box -->
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<!-- feature box -->
+						<div class="feature feature-s6 boxed">
+							<a href="#">
+								<div class="fbox-photo">
 									<img src="image/Home Page Card Image 1.png" alt="">
 								</div>
 								<div class="fbox-content">
-									<h3>Boiler Installation</h3>
-									<p>Professional boiler installation with affordable new boiler replacement,
-										transparent boiler installation cost, and expert local boiler fitters near you.
+									<h3>Gas Boilers </h3>
+									<p>Specialist gas boiler services by fully qualified Gas Safe engineers. We provide new gas boiler installation, gas boiler replacement, gas boiler servicing, and repairs ensuring safe, energy-efficient heating with clear, upfront pricing.
 									</p>
 									<span class="btn-link link-arrow"><a href="boiler-installation-service.html">Read More</a></span>
 								</div>
@@ -218,32 +265,13 @@
 									<img src="image/Home Page Card Image 2.png" alt="">
 								</div>
 								<div class="fbox-content">
-									<h3>Boiler Repair</h3>
-									<p>Reliable boiler repair and boiler service near you with fair boiler service
-										charges, clear cost of boiler maintenance, and expert local technicians. </p>
+									<h3>Service & Repair</h3>
+									<p>Expert boiler service and repair by qualified Gas Safe engineers and central heating engineers. We deliver fast gas boiler repair services, annual servicing, and emergency breakdown support to keep your heating running safely all year round.</p>
 									<span class="btn-link link-arrow"><a href="boiler-repair.html">Read More</a></span>
 								</div>
 							</a>
 						</div>
 						<!-- End Feature box -->
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<!-- feature box -->
-						<div class="feature feature-s6 boxed">
-							<a href="#">
-								<div class="fbox-photo">
-									<img src="image/Home Page Card Image 3.png" alt="">
-								</div>
-								<div class="fbox-content">
-									<h3>Heating Services</h3>
-									<p>Professional heating services by trusted heating engineers near you. From central
-										heating boilers to heat pump installation, we handle all plumbing and heating
-										needs</p>
-									<span class="btn-link link-arrow"><a href="heating-services.html">Read More</a></span>
-								</div>
-							</a>
-						</div>
-						<!-- End Featur box -->
 					</div>
 				</div>
 				<!-- Feture Row  #end -->
@@ -262,9 +290,7 @@
 
 				<div class="pad-r-md res-m-bttm-lg">
 					<h2>Our Services</h2>
-					<p>We provide expert boiler, heating, gas safety, and plumbing services for residential and
-						commercial properties. Our certified engineers and local plumbers deliver fast response,
-						quality workmanship, and transparent pricing across all services. </p>
+					<p>At Minty Heating, we deliver expert plumbing, gas boiler, and service & repair solutions for homes and businesses. Our fully qualified engineers and local plumbers provide high-quality workmanship, fast response times, and clear, honest pricing giving you complete peace of mind on every job. </p>
 				</div>
 
 
@@ -284,20 +310,17 @@
 								<!-- Each Quotes -->
 								<div class="quotes">
 									<div class="">
-										<h2 style="color: rgba(255, 153, 51, 0.85);">Boiler Installation </h2>
-										<p>We offer professional boiler installation with complete boiler and
-											installation services for homes and businesses. Whether you need a new
-											boiler replacement or a full
-											system upgrade, our expert boiler fitters near you ensure safe and efficient
-											results. </p>
+										<h2 style="color: rgba(255, 153, 51, 0.85);">Plumbing</h2>
+										<p>Professional plumbing services delivered by experienced local plumbers you can trust. From everyday repairs to urgent plumbing emergencies, we provide fast, reliable solutions for homes and businesses. </p>
 									</div>
 									<div class="row">
+										<h3>Our Plumbing Services Include: </h3>
 										<div class="col-md-6 col-sm-6">
 
 											<ul class="list-style checkmark text-justify">
-												<li>Boiler installation near me with fast local service.</li>
-												<li>New boiler and installation packages.</li>
-												<li>New boiler fitted with fu.ll testing and certification</li>
+												<li>General plumbing repairs and maintenance.</li>
+												<li>Leak detection and burst pipe repairs.</li>
+												<li>Blocked sinks, toilets, and drains.</li>
 
 											</ul>
 										</div>
@@ -305,43 +328,9 @@
 										<div class="col-md-6 col-sm-6">
 
 											<ul class="list-style checkmark text-justify">
-												<li>Competitive new boiler prices.</li>
-												<li>Clear boiler installation cost and replacing boiler cost.</li>
-												<li>Trusted boiler fitters near me.</li>
-											</ul>
-										</div>
-
-
-									</div>
-
-								</div>
-								<!-- End Quotes -->
-							
-							
-							
-								<!-- Each Quotes -->
-								<div class="quotes">
-									<div class="">
-										<h2 style="color: rgba(255, 153, 51, 0.85);">Heating Services </h2>
-										<p>Our professional heating services are delivered by trusted heating engineers near me and experienced central heating engineers near me. From central heating boilers to modern heat pump installation, we cover all heat & plumb needs </p>
-									</div>
-									<div class="row">
-										<div class="col-md-6 col-sm-6">
-
-											<ul class="list-style checkmark text-justify">
-												<li>Full plumbing and heating near me services</li>
-												<li>Boiler maintenance near me</li>
-												<li>Central heating installations and repairs</li>
-
-											</ul>
-										</div>
-										<!-- // -->
-										<div class="col-md-6 col-sm-6">
-
-											<ul class="list-style checkmark text-justify">
-												<li>Energy-efficient heat pump systems.</li>
-												<li>Residential heating services.</li>
-												
+												<li>Bathroom and kitchen plumbing.</li>
+												<li>Hot water and pressure issues.</li>
+												<li>24/7 emergency plumber call-outs.</li>
 											</ul>
 										</div>
 
@@ -354,16 +343,17 @@
 								<!-- Each Quotes -->
 								<div class="quotes">
 									<div class="">
-										<h2 style="color: rgba(255, 153, 51, 0.85);">Landlord Gas Safety Checks </h2>
-										<p>We carry out certified landlord gas safety inspections with full legal compliance. Our gas safety checks are completed by qualified engineers using official Gas Safe Register checks. </p>
+										<h2 style="color: rgba(255, 153, 51, 0.85);">Gas Boilers</h2>
+										<p>Expert gas boiler services carried out by fully qualified Gas Safe engineers. Whether you need a new gas boiler installation, gas boiler replacement, or routine servicing, we ensure safe, efficient heating all year round.</p>
 									</div>
 									<div class="row">
+										<h3>Our Gas Boiler Services Include:</h3>
 										<div class="col-md-6 col-sm-6">
 
 											<ul class="list-style checkmark text-justify">
-												<li>Gas safety check near me with fast booking.</li>
-												<li>Full gas safety inspection for rental properties.</li>
-												<li>British Gas gas safety check–standard servicing.</li>
+												<li>New gas boiler installation.</li>
+												<li>Gas boiler replacement and upgrades.</li>
+												<li>Boiler gas installation and conversions.</li>
 
 											</ul>
 										</div>
@@ -371,8 +361,9 @@
 										<div class="col-md-6 col-sm-6">
 
 											<ul class="list-style checkmark text-justify">
-												<li>Annual landlord gas safety checks.</li>
-												<li>CP12 gas safety certificates for landlords .</li>
+												<li>Gas boiler service and maintenanc.</li>
+												<li>Gas boilers repair.</li>
+												<li>Gas and boiler safety checks.</li>
 												
 											</ul>
 										</div>
@@ -387,16 +378,17 @@
 								<!-- Each Quotes -->
 								<div class="quotes">
 									<div class="">
-										<h2 style="color: rgba(255, 153, 51, 0.85);">General Plumbing Services </h2>
-										<p>We deliver complete plumbing services through trusted local plumbers and experienced general plumbers near me. From urgent leaks to full system repairs, our emergency plumber team is always ready. </p>
+										<h2 style="color: rgba(255, 153, 51, 0.85);">Service & Repair </h2>
+										<p>Reliable service and repair for boilers and heating systems by experienced central heating engineers. We diagnose faults quickly and carry out safe, compliant repairs to restore your heating and hot water.</p>
 									</div>
 									<div class="row">
+										<h3>Our Service & Repair Includes:</h3>
 										<div class="col-md-6 col-sm-6">
 
 											<ul class="list-style checkmark text-justify">
-												<li>24/7 emergency plumber callouts.</li>
-												<li>Fast response for plumbing emergencies.</li>
-												<li>Reliable plumbers near me.</li>
+												<li>Gas boiler repair service.</li>
+												<li>Annual gas boiler service.</li>
+												<li>Heating and hot water fault diagnosis.</li>
 
 											</ul>
 										</div>
@@ -404,8 +396,9 @@
 										<div class="col-md-6 col-sm-6">
 
 											<ul class="list-style checkmark text-justify">
-												<li>Full residential & commercial plumbing services.</li>
-												<li>Trusted local plumbers for all repairs.</li>
+												<li>Emergency boiler breakdown support.</li>
+												<li>Guidance on gas emergencies and safety.</li>
+												<li>Repairs carried out by Gas Safe engineers.</li>
 												
 											</ul>
 										</div>
@@ -430,15 +423,15 @@
 	<!-- End Content -->
 
 	<!-- Call Action -->
-	<div class="call-action cta-small has-parallax bg-secondary" style="background-image: url('image/plx-dark.jpg');">
+	<div class="call-action cta-small has-parallax bg-secondary">
 		<div class="cta-block">
 			<div class="container">
 				<div class="content row">
 
 					<div class="wide-md center">
-						<p class="lead">For immediate plumbing emergencies, contact our 24/7 emergency plumbers anytime,
-							day or night.</p>
-						<h2 class="heading-lead">Fast, Trusted Emergency Plumbing at Fair Prices. </h2>
+						<h2 class="lead">Emergency Plumbing & Heating Support – 24/7</h2>
+						<p class="">For immediate plumbing emergencies, contact our 24/7 emergency plumbers anytime, day or night. We provide fast, 
+							professional support when you need it most—helping to prevent damage and restore your plumbing quickly. </p>
 						<div class="gaps size-xs"></div>
 
 					</div>
@@ -459,11 +452,10 @@
 						<img src="image/Home Page Card Image 770x500.png" alt="">
 					</div>
 					<div class="col-sm-6 pad-l">
-						<h5 class="heading-sm-lead">Your Local Plumbing Experts.</h5>
+						<h5 class="heading-sm-lead">Your Local Plumbing & Heating Experts </h5>
 						<h2>Trusted plumbing services for homes and businesses in your city.</h2>
-						<p>We provide reliable plumbing, heating, and boiler services for both residential and
-							commercial customers. Our experienced engineers and local plumbers are committed to
-							delivering high-quality workmanship, fast response times, and honest, transparent pricing.
+						<p>We deliver trusted plumbing, heating, and boiler services for both residential and commercial customers. Our experienced engineers and local plumbers are committed to 
+							high-quality workmanship, quick response times, and clear, honest pricing on every job. 
 						</p>
 						<!-- <a href="#" class="btn-link link-arrow-sm">Know More About Us</a> -->
 					</div>
@@ -471,38 +463,44 @@
 				<!-- // -->
 				<div class="gaps size-lg"></div>
 				<div class="row">
-					<div class="col-sm-4 res-s-bttm">
+					<div class="col-sm-6 pd-x3">
 						<div class="bg-white pd-x3 center">
 							<div class="icon-box style-s2 size-md">
 								<em class="fa fa-users"></em>
 							</div>
 							<h4>Fast Response</h4>
-							<p>We respond quickly to emergencies with fully equipped vans and professional plumbers
-								ready to solve your problem.
+							<p>We attend emergencies quickly with fully equipped vans and skilled plumbers ready to resolve the issue.
 							</p>
 						</div>
 					</div>
 					<!-- // -->
-					<div class="col-sm-4 res-s-bttm">
+					<div class="col-sm-6 pd-x3">
 						<div class="bg-white pd-x3 center">
 							<div class="icon-box style-s2 size-md">
 								<em class="fa fa-trophy"></em>
 							</div>
 							<h4>Certified Engineers</h4>
-							<p>Our engineers are fully qualified, Gas Safe registered, and trained to handle all
-								plumbing and heating systems safely.
+							<p>All engineers are fully qualified, Gas Safe registered, and trained to work safely on all plumbing and heating systems.
 							</p>
 						</div>
 					</div>
 					<!-- // -->
-					<div class="col-sm-4">
+					<div class="col-sm-6 pd-x3">
 						<div class="bg-white pd-x3 center">
 							<div class="icon-box style-s2 size-md">
 								<em class="fa fa-support"></em>
 							</div>
 							<h4>Affordable Pricing</h4>
-							<p>We offer fair, transparent pricing with no hidden charges on all plumbing, heating, and
-								boiler services.
+							<p> We offer fair, transparent pricing with no hidden charges across all plumbing, heating, and boiler services.
+						</div>
+					</div>
+					<div class="col-sm-6 pd-x3">
+						<div class="bg-white pd-x3 center">
+							<div class="icon-box style-s2 size-md">
+								<em class="fa fa-cogs"></em>
+							</div>
+							<h4>Complete Heating & Plumbing Service</h4>
+							<p>Expert heating engineers and local plumbers delivering dependable plumbing, heating, and emergency support.</p>
 						</div>
 					</div>
 				</div>
@@ -511,9 +509,54 @@
 		</div>
 	</div>
 	<!-- End Content -->
+	 <!-- why to choose us -->
+	 <section class="why-choose-notes">
+    <div class="container">
+        <h2 class="section-title">Why Choose Minty Heating?</h2>
 
+        <ul class="choose-notes">
+            <li>
+                <span class="icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </span>
+                <div class="content">
+                    <h4>Fast Response</h4>
+                    <p>Rapid attendance for emergencies with fully equipped vans.</p>
+                </div>
+            </li>
 
+            <li>
+                <span class="icon">
+                    <i class="fa-solid fa-user-shield"></i>
+                </span>
+                <div class="content">
+                    <h4>Certified Engineers</h4>
+                    <p>Qualified, Gas Safe registered professionals.</p>
+                </div>
+            </li>
 
+            <li>
+                <span class="icon">
+                    <i class="fa-solid fa-sterling-sign"></i>
+                </span>
+                <div class="content">
+                    <h4>Affordable Pricing</h4>
+                    <p>Clear, honest pricing with no hidden charges.</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <div class="content">
+                    <h4>Local Experts</h4>
+                    <p>Trusted service for homes and businesses in your area.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 
 	<!-- End Section -->
 
@@ -524,9 +567,9 @@
 				<div class="content row">
 
 					<div class="cta-sameline">
-						<h1>Complete Heating & Plumbing Service</h1>
-						<h3>Expert heating engineers and local plumbers delivering fast, reliable heating, plumbing, and
-							emergency support for homes and businesses.</h3>
+						<h1>Complete Heating & Plumbing Service </h1>
+						<h3>From everyday plumbing to gas boilers and urgent repairs, Minty Heating provides a complete solution for residential and commercial customers.
+							 Our commitment is simple: quality workmanship, fast response, and transparent pricing every time.</h3>
 						<a class="btn btn-outline" href="contact.html">Contact Us</a>
 					</div>
 
@@ -535,6 +578,95 @@
 		</div>
 	</div>
 	<!-- End Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-accordion">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer emergency plumbing services?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, we provide 24/7 emergency plumbing for burst pipes, leaks, blockages,
+                        and water loss, with fast response to minimise damage and restore services safely.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are your engineers Gas Safe registered?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, all our engineers are fully Gas Safe registered and qualified to carry out
+                        gas boiler installation, servicing, and repairs in full compliance with UK regulations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What areas do you cover?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        We are based in Feltham and cover Staines, Ashford, Stanwell, Twickenham,
+                        Kingston, Slough, and nearby areas for plumbing and heating services.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you work with residential and commercial customers?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, we provide professional plumbing, heating, and boiler services for both
+                        residential and commercial properties, delivering consistent quality and workmanship.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How quickly can you respond to emergencies?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        We aim to attend emergencies as quickly as possible, often the same day,
+                        with fully equipped vans to resolve most plumbing or heating issues on the first visit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer transparent pricing?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, we provide clear and honest pricing before work begins, with no hidden charges,
+                        ensuring you know exactly what to expect from start to finish.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+	
 	<!-- Footer Widget-->
 	<div class="footer-widget section-pad-md">
 		<div class="container">
@@ -565,11 +697,9 @@
 							<h5 class="wgs-title">Our Plumbing Services</h5>
 							<div class="wgs-content">
 								<ul class="menu">
-									<li><a href="boiler-installation-service.html">Boiler Installation</a></li>
-									<li><a href="boiler-repair.html">Boiler Repair</a></li>
-									<li><a href="heating-services.html">Heating Services</a></li>
-									<li><a href="landlord-gas-safety-checks.html">Landlord Gas Safety Checks</a></li>
-									<li><a href="general-plumbing-services.html">General Plumbing Services</a></li>
+							    <li><a href="services_and_repair.html">Service & Repair</a></li>
+								<li><a href="general-plumbing-services.html"> Plumbing Services</a></li>
+								<li><a href="gas_boiler.html">Gas Boiler Service</a></li>
 									
 								</ul>
 							</div>
@@ -642,7 +772,37 @@
 	<script src="js/jquery.bundle.js"></script>
 	<!-- Theme Script init() -->
 	<script src="js/script.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Show first FAQ answer on page load
+    $('.faq-item.active .faq-answer').slideDown().addClass('show');
+
+    // Click to toggle
+    $('.faq-question').click(function(){
+        var parent = $(this).parent();
+
+        if(parent.hasClass('active')){
+            // Close if already open
+            parent.removeClass('active');
+            parent.find('.faq-answer').slideUp().removeClass('show');
+        } else {
+            // Close all others
+            $('.faq-item.active').removeClass('active').find('.faq-answer').slideUp().removeClass('show');
+            // Open clicked
+            parent.addClass('active');
+            parent.find('.faq-answer').slideDown().addClass('show');
+        }
+    });
+});
+</script>
+
+
 	<!-- End script -->
+
+
 </body>
+
 
 </html>

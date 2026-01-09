@@ -557,6 +557,16 @@ form label.error { display: none !important; }
 .icon-box.style-s2 { background-color: #FF5326; }
 .icon-box.style-s3, .icon-box.style-s4 { -ms-border-radius: 0px; border-radius: 0px; border-color: #FF9933; color: #FF9933; }
 .icon-box.style-s4 { -ms-border-radius: 0px; border-radius: 0px; border-color: #FF5326; color: #FF5326; }
+/* .equal-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.equal-card p {
+  margin-top: auto;
+} */
+
+
 
 .feature-intro .row + .row { margin-top: 60px; }
 .feature-intro a.btn-link { font-size: 12px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; display: inline-block; vertical-align: middle; color: #FF9933; }
@@ -1226,6 +1236,65 @@ form label.error { display: none !important; }
 .post-boxed .post-entry h3, .post-boxed .post-entry h2 { margin-bottom: 10px; font-size: 1.125em; font-weight: 600; }
 .post-boxed .post-entry h3 a, .post-boxed .post-entry h2 a { color: #373e45; }
 .post-boxed .post-entry h3 a:hover, .post-boxed .post-entry h2 a:hover { color: #FF9933; }
+/* why to choose us (home page) */
+
+.why-choose-notes {
+    padding: 60px 20px;
+    background: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+.choose-notes {
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.choose-notes li {
+    display: flex;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.choose-notes li:last-child {
+    border-bottom: none;
+}
+
+.choose-notes .icon {
+    min-width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #FF9933;;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.choose-notes .content h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #020617;
+}
+
+.choose-notes .content p {
+    margin: 0;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+}
+
 
 /* ========================================================================== 14.0 FAQs css ========================================================================== */
 .faqs-row:first-child { margin-top: -30px; }
@@ -3354,7 +3423,7 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
 /* GRID */
 .promise-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 

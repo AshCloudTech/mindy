@@ -30,9 +30,10 @@ $mail->isSMTP();
 $mail->Host       = 'smtp.gmail.com';
 $mail->SMTPAuth   = true;
 $mail->Username   = 'syedaummehani.m@gmail.com';
-$mail->Password   = 'kzmy miqw hhay yuwd'; //
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port       = 587;
+$mail->Password   = 'mhiz lzpi rvqc ftia'; 
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+$mail->Port = 465;
+
 
 $mail->isHTML(true);
 $mail->CharSet = 'UTF-8';
@@ -50,7 +51,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	if (
 		empty($_POST['contact-name']) ||
 		empty($_POST['contact-email']) ||
-		empty($_POST['contact-message'])
+		empty($_POST['contact-message'])||
+		empty($_POST['contact-phone'])||
+		empty($_POST['pincode'])||
+		empty($_POST['address'])||
+		empty($_POST['service_type'])
+
 	) {
 		echo json_encode([
 			'result' => 'error',
@@ -74,11 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$cf_name    = strip_tags($_POST['contact-name']);
 	$cf_email   = filter_var($_POST['contact-email'], FILTER_SANITIZE_EMAIL);
 	$cf_phone   = $_POST['contact-phone'] ?? '';
-	$cf_cell    = $_POST['contact-cell'] ?? '';
-	$cf_address = $_POST['contact-address'] ?? '';
-	$cf_city    = $_POST['contact-citystate'] ?? '';
-	$cf_service = $_POST['contact-service'] ?? '';
-	$cf_time    = $_POST['contact-besttime'] ?? '';
+	$cf_address = $_POST['address'] ?? '';
+	$cf_pincode    = $_POST['pincode'] ?? '';
+	$cf_service = $_POST['service_type'] ?? '';
 	$cf_message = nl2br(htmlspecialchars($_POST['contact-message']));
 
 	// =====================
@@ -99,10 +103,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ";
 
 	if ($cf_phone)   $body .= "<strong>Phone:</strong> {$cf_phone}<br><br>";
-	if ($cf_cell)    $body .= "<strong>Cell:</strong> {$cf_cell}<br><br>";
-	if ($cf_time)    $body .= "<strong>Best Time:</strong> {$cf_time}<br><br>";
+	if ($cf_pincode)    $body .= "<strong>Pincode</strong> {$cf_pincode}<br><br>";
 	if ($cf_address) $body .= "<strong>Address:</strong> {$cf_address}<br><br>";
-	if ($cf_city)    $body .= "<strong>City/State/Zip:</strong> {$cf_city}<br><br>";
 	if ($cf_service) $body .= "<strong>Service:</strong> {$cf_service}<br><br>";
 
 	$body .= "<strong>Message:</strong><br>{$cf_message}<br><br>";
@@ -116,6 +118,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	// =====================
 	// SEND EMAIL
 	// =====================
+	$mail->SMTPDebug = 2;
+$mail->Debugoutput = 'error_log';
+$mail->SMTPOptions = [
+    'socket' => [
+        'bindto' => '0.0.0.0:0'
+    ]
+];
 	try {
 		$mail->send();
 		echo json_encode([

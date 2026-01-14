@@ -28,13 +28,13 @@ try {
 	$mail->isSMTP();
 	$mail->Host       = 'smtp.gmail.com';
 	$mail->SMTPAuth   = true;
-	$mail->Username   = '';
-	$mail->Password   = '';
+	$mail->Username   = 'syedaummehani.m@gmail.com';
+	$mail->Password   = 'keak xxsm gkpy teyq';
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 	$mail->Port       = 587;
 
-	$mail->setFrom('', 'Website Contact');
-	$mail->addAddress('');
+	$mail->setFrom('syedaummehani.m@gmail.com', 'Website Contact');
+	$mail->addAddress('syedaummehani.m@gmail.com');
 
 	$mail->isHTML(true);
 	$mail->Subject = 'New Contact Form Submission';

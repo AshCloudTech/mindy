@@ -2,7 +2,10 @@ Options -Indexes
  
 <IfModule mod_rewrite.c>
     RewriteEngine On
- 
-    # Allow POST to submit.php via clean URL
-    RewriteRule ^submit$ submit.php [L]
 </IfModule>
+ 
+<Files "contact.php">
+<LimitExcept GET POST>
+        Require all denied
+</LimitExcept>
+</Files>

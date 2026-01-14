@@ -657,7 +657,7 @@ form label.error { display: none !important; }
 .navbar-nav > li:hover > ul { top: 100%; margin-top: 0; opacity: 1; visibility: visible; }
 .navbar-nav > li.quote-btn { margin-left: 12px; float: right; }
 .navbar-nav > li.quote-btn .btn { padding: 9px 24px 8px; font-size: 14px; font-weight: 700; letter-spacing: inherit; margin: 5px; }
-.navbar-nav > li.has-children > a:after { color: #596570; content: "\f107"; display: inline-block; opacity: .5; width: 10px; text-align: center; margin-left: 5px; font-size: 13px; line-height: .9; font-family: "FontAwesome"; transition: transform .4s; }
+.navbar-nav > li.has-children > a:after { color: #596570; content: "\f107"; display: inline-block; opacity: .5; width: 10px; text-align: center; margin-left: 5px; font-size: 18px; line-height: .9; font-family: "FontAwesome"; transition: transform .4s; }
 .navbar-nav li ul { position: absolute; background: #fff; border: 0px; border-radius: 0; padding: 0px; left: 0; top: -999em; z-index: 99; display: block; opacity: 0; width: 240px; visibility: hidden; transition: opacity .5s, visibility .4s; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
 .navbar-nav li ul li { position: relative; }
 .navbar-nav li ul li ul { left: 240px; opacity: 0; visibility: hidden; }

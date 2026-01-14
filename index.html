@@ -130,6 +130,10 @@
   display: none;
 
 }
+.nav-btn_num{
+	float:left;
+	margin-left: 16%;
+}
 
 #mainnav .navbar-nav {
   display: flex;
@@ -142,11 +146,7 @@
   display: block;
 
 }
-.site-header.has-fixed .nav-btn{
-	float: right;
-	display: inline-flex;
-	margin-left: 20%;
-}
+
 
 .site-header.has-fixed #mainnav .navbar-nav {
   width: 100%;
@@ -233,6 +233,9 @@
     letter-spacing: 2px;
     color: #FF9933;
 }
+.num_btn:hover{
+background-color: none !important;
+}
 /* Mobile */
 @media (max-width: 576px) {
     .accreditations-logos {
@@ -310,12 +313,12 @@
   <ul class="nav navbar-nav">
 
     <!-- Logo (hidden initially) -->
-    <li class="nav-logo">
-      <span class="">
+    <span class="nav-logo">
+      <a class="" href="./">
         <img class="logo_nav logo-dark" alt="logo"
           src="image/logo_bg (1).png" srcset="image/logo_bg.png 3x">
-      </span>
-    </li>
+	  </a>
+    </span>
 
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
@@ -333,12 +336,13 @@
 
     <!-- Button (hidden initially) -->
 	 
-    <li class="quote-btn nav-btn">
+    <li class="nav-btn nav-btn_num">
 		<a href="tel:07588866241">
     
     <em class="fa fa-phone" aria-hidden="true"></em>
     07588866241
-  </a>
+  </a></li>
+  <li class="quote-btn nav-btn">
 	
       <a href="contact.html" class="btn">Book Service Now</a>
     </li>
@@ -658,8 +662,8 @@
 						<img src="image/Home Page Card Image 770x500.png" alt="">
 					</div>
 					<div class="col-sm-6 pad-l">
-						<h3 class="heading-sm-lead">Your Local Plumbing & Heating Experts </h3>
-						<!-- <h2>Trusted plumbing services for homes and businesses in your city.</h2> -->
+						<!-- <h3 class="heading-sm-lead">Your Local Plumbing & Heating Experts </h3> -->
+						 <h2>Your Local Plumbing & Heating Experts.</h2> 
 						<p>We deliver trusted plumbing, heating, and boiler services for both residential and commercial customers. Our experienced engineers and local plumbers are committed to 
 							high-quality workmanship, quick response times, and clear, honest pricing on every job. 
 						</p>
@@ -1017,8 +1021,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="site-copy col-sm-7">
-					<p>Copyright &copy; 2025 Minty Heating & Plumbing. All Rights Reserved <span class="sep"> | </span>Powered by <a
-							href="https://www.cloudtechnologiesltd.com/"> Cloud Technologies</a></p>
+					<p>Copyright &copy; 2026 Minty Heating & Plumbing. All Rights Reserved <span class="sep"> | </span>Powered by <a
+							href="https://www.cloudtechnologiesltd.com/"> Cloud Technologies Ltd</a></p>
 				</div>
 				
 			</div>

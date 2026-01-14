@@ -3716,12 +3716,12 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
   display: block;
 
 }
-.site-header.has-fixed .nav-btn{
-	float: right;
-	display: inline-flex;
-	margin-left: 20%;
-}
 
+.nav-btn_num{
+	float:left;
+	margin-left: 16%;
+    font-size: 25px;
+}
 .site-header.has-fixed #mainnav .navbar-nav {
   width: 100%;
   margin-left: 0%;
@@ -3825,6 +3825,11 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
 	height: 1000px; width:auto; object-fit: cover;
 	transform: scale(2.1);
 
+}
+/* card align center for the service page */
+.promise-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 	

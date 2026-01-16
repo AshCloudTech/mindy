@@ -2084,7 +2084,7 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
   .topbar { display: none; }
   .banner-static .banner-text:not([class*="wide-"]) { max-width: 290px; }
   .header-s1 { border-top: 3px solid #2a2d33; }
-  .header-s1 .navbar-toggle + div.quote-btn { display: inline-block; float: right; margin: 8px 0; }
+  .header-s1 .navbar-toggle + div.quote-btn { display: inline-block; margin: 8px 0; }
   .header-s1 .quote-btn .btn { padding: 4px 12px; font-size: 9px; -ms-border-radius: 2px; border-radius: 2px; }
   .header-s1 .top-contact span small { font-size: 9px; }
   .header-s1 .top-contact .t-phone { line-height: 16px; }
@@ -3719,7 +3719,7 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
 
 .nav-btn_num{
 	float:left;
-	margin-left: 16%;
+	margin-left: 0%;
     font-size: 25px;
 }
 .site-header.has-fixed #mainnav .navbar-nav {
@@ -3831,5 +3831,22 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
     display: flex;
     justify-content: center;
 }
+/* quote-btn for is-fixed */
+.quote-btnss{
+	background: #FF5326; border-color: #FF5326;
+}
+.is-invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.15rem rgba(220,53,69,.25);
+}
+
+/* Inline error text */
+.field-error {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+
 
 	

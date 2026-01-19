@@ -135,10 +135,7 @@
 	margin-left: 0%;
 }
 
-#mainnav .navbar-nav {
-  display: flex;
-  /* align-items: center; */
-}
+
 
 /* SHOW ON SCROLL*/
 .site-header.has-fixed .nav-logo,
@@ -260,6 +257,40 @@ background-color: none !important;
 	background: #FF5326; border-color: #FF5326;
 }
 
+/* Banner background image container */
+.banner .fill {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gray transparent overlay */
+.banner .fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+   background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.35)
+  );
+  z-index: 1;
+}
+
+/* Keep text & buttons above overlay */
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure white text is clear */
+.banner-content,
+.banner-content h3,
+.banner-content p {
+  color: #ffffff;
+}
+
+
+
 	</style>
 </head>
 
@@ -308,7 +339,7 @@ background-color: none !important;
 						<span class="icon-bar"></span>
 					</button>
 					<!-- Q-Button for Mobile -->
-					<div class="quote-btn"><a class="btn" href="request-service.html"><span>Request Service</span></a>
+					<div class="quote-btn"><a class="btn" href="contact.html"><span>Request Service</span></a>
 					</div>
 				</div>
 				<!-- #end Trigger -->
@@ -376,8 +407,7 @@ background-color: none !important;
 											<p>We deliver fast, affordable, and professional heating and plumbing
 												services whenever you need our reliable care.
 											</p>
-											<p class="more-cta"><a href="services.html" class="btn btn-light btn-outline">Our
-													Services</a> <a href="contact.html" class="btn btn-alt">Request Service</a></p>
+											<p class="more-cta"> <a href="contact.html" class="btn btn-alt">Request Service</a></p>
 										</div>
 									</div>
 								</div>
@@ -396,8 +426,7 @@ background-color: none !important;
 											<h3 class="page-title">LOCAL HEATING & PLUMBING EXPERTS</h3>
 										<p>Professional residential heating and plumbing services backed by skilled technicians for fast, reliable results.</p>
 
-											<p class="more-cta"><a href="services.html" class="btn btn-light btn-outline">Our
-													Services</a> <a href="contact.html" class="btn btn-alt">Request Service</a></p>
+											<p class="more-cta"><a href="contact.html" class="btn btn-alt">Request Service</a></p>
 										</div>
 									</div>
 								</div>

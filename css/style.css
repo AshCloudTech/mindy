@@ -2790,16 +2790,7 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
     transition: all 0.3s ease;
 }
 
-.faq-question {
-    padding: 18px 25px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #FF5326;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .faq-question:hover {
     background: #fef4ec; /* subtle hover */

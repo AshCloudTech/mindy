@@ -3783,7 +3783,7 @@ div[class*='filtered-menu'].style-v2 li:last-child { padding-right: 0; }
     height: auto;
 }
 
-.brand-text h1 {
+.brand-text h2 {
     margin: 0;
     font-size: 36px;
     font-weight: 800;
